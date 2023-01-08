@@ -1,10 +1,23 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
+import SideBar from './components/SideBar';
+import Home from './components/Home/Home';
+import {Routes, Route} from "react-router-dom"
+
 
 function App() {
   return (
+    
     <div className="App">
+      <Routes>
+        <NavBar/>
+
+      <SideBar/>
+
+      </Routes>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
