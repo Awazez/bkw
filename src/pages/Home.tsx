@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import NavBar from '../components/NavBar';
+import SideBar from '../components/SideBar';
 
 export interface IHomePageProps {}
 
@@ -7,7 +9,10 @@ const HomePage: React.FunctionComponent<IHomePageProps> = (props) => {
     const navigate = useNavigate();
 
     return (
+        
         <div>
+            <NavBar/>
+            <SideBar/>
             <p>This is the home page.</p>
             <p>
                 <Link to="/about">Go to the About Page!</Link>
