@@ -1,4 +1,4 @@
-import '../styles/SideBar.css'
+import './SideBar.css'
 import {} from "@fortawesome/fontawesome-svg-core"
 import HomeIcon from '@mui/icons-material/Home';
 import SearchIcon from '@mui/icons-material/Search';
@@ -11,8 +11,6 @@ function SideBar() {
     return (
         
         <aside className="navbar_sidebar">
-    
-             
                     <a  className="navbar_box">
                     <HomeIcon/>
                     </a>
